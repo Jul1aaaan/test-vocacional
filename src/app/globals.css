@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+:root {
+  --foreground-rgb: 0, 0, 0; /* Negro para el texto */
+  --background-start-rgb: 255, 248, 220; /* Un blanco manteca suave para el comienzo del gradiente */
+  --background-end-rgb: 255, 250, 240; /* Un blanco manteca suave, ligeramente más claro para el final del gradiente */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 0, 0, 0; /* Texto oscuro para legibilidad */
+    --background-start-rgb: 255, 248, 220; /* Un blanco manteca suave para el comienzo del gradiente */
+    --background-end-rgb: 255, 250, 240; /* Un blanco manteca suave, ligeramente más claro para el final del gradiente */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+}
+
