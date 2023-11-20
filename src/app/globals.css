@@ -27,15 +27,15 @@ body {
 } */
 
 :root {
-  --foreground-rgb: 0, 0, 0; /* Negro para el texto */
-  --background-start-rgb: 255, 248, 220; /* Un blanco manteca suave para el comienzo del gradiente */
+  --foreground-rgb: 255, 165, 0; /* Naranja suave para el texto */
+  --background-start-rgb: 255, 220, 185; /* Un blanco manteca suave con tono naranja suave para el comienzo del gradiente */
   --background-end-rgb: 255, 250, 240; /* Un blanco manteca suave, ligeramente más claro para el final del gradiente */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 0, 0, 0; /* Texto oscuro para legibilidad */
-    --background-start-rgb: 255, 248, 220; /* Un blanco manteca suave para el comienzo del gradiente */
+    --foreground-rgb: 255, 165, 0; /* Texto oscuro para legibilidad */
+    --background-start-rgb: 255, 220, 185; /* Un blanco manteca suave con tono naranja suave para el comienzo del gradiente */
     --background-end-rgb: 255, 250, 240; /* Un blanco manteca suave, ligeramente más claro para el final del gradiente */
   }
 }
@@ -48,4 +48,19 @@ body {
     rgb(var(--background-end-rgb))
   );
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Color de fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Color del thumb */
+  border-radius: 6px; /* Bordes redondeados del thumb */
+  border: 3px solid rgba(0, 0, 0, 0); /* Espacio transparente entre track y thumb */
+}
+
 

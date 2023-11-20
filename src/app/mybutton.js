@@ -5,7 +5,7 @@ const MyButton = ({ children, onClick, disabled, title }) => {
   const [isActive, setIsActive] = useState(false);
 
   const baseStyle = {
-    backgroundColor: 'white',
+    backgroundColor: "white",
     color: disabled ? '#A1A1A1' : 'black', // Color gris cuando está deshabilitado
     borderRadius: '10em', // 10em es muy redondeado, ajusta si es necesario
     fontSize: '14px',

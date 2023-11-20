@@ -12,6 +12,7 @@ import { createClient } from "@supabase/supabase-js";
 import MyButton from "./mybutton";
 import Image from "next/image";
 import { FaBook } from "react-icons/fa";
+
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_PUBLIC;
 
@@ -203,7 +204,7 @@ const TestVocacional = ({ setUserData, userData }) => {
         {isLoading ? (
           <Card className="max-w-md text-center p-4">
             <CardBody className="overflow-visible py-2 flex flex-col gap-5">
-              <Spinner color="danger"/>
+              <Spinner color="danger" />
               <p>Cargando...</p>
             </CardBody>
           </Card>
@@ -232,31 +233,37 @@ const TestVocacional = ({ setUserData, userData }) => {
   }
 
   return (
-    <Card className="max-w-[800px] w-1/2 p-8 flex-col flex gap-5 h-2/3 ">
+    <Card className="max-w-[800px] w-full md:w-1/2 p-8 flex-col flex gap-5">
       <CardHeader className="flex justify-start items-center gap-3 font-bold">
         <FaBook size={30} />
         <p>Bienvenido {userData.nombre} al Test de Orientación Vocacional</p>
       </CardHeader>
       <CardBody className="overflow-y-scroll">
-        <div className="flex gap-8 flex-col my-5">
+        <div className="flex flex-col gap-8 my-5">
           {preguntas.map((pregunta, index) => (
-            <div key={index} className="flex gap-2 flex-col">
-              <h3 className="font-semibold">{pregunta.texto}</h3>
+            <div key={index} className="mb-4 px-4 sm:px-6">
+              <h3 className="text-lg sm:text-base md:text-lg font-semibold">
+                {pregunta.texto}
+              </h3>
               <RadioGroup
+                value={respuestas[index]}
                 onChange={(e) => handleRadioChange(index, e.target.value)}
-                className="ml-8"
+                className="mt-2"
               >
                 {Object.keys(pregunta.opciones).map((opcion, idx) => (
-                  <Radio key={idx} value={opcion}>
-                    {opcion}
-                  </Radio>
+                  <div key={idx} className="flex items-center gap-2 mt-1">
+                    <Radio value={opcion} />
+                    <span className="text-sm sm:text-xs md:text-sm">
+                      {opcion}
+                    </span>
+                  </div>
                 ))}
               </RadioGroup>
             </div>
           ))}
         </div>
       </CardBody>
-      <CardFooter className="flex justify-end items-center p-6">
+      <CardFooter className="flex justify-center md:justify-end items-center p-8 sm:p-6">
         <MyButton
           onClick={calcularResultados}
           disabled={botonDeshabilitado}
@@ -274,4 +281,3 @@ const TestVocacional = ({ setUserData, userData }) => {
 };
 
 export default TestVocacional;
-// gola

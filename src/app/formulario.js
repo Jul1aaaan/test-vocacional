@@ -9,6 +9,7 @@ import {
   CardFooter,
   CardBody,
 } from "@nextui-org/react";
+import { MdLibraryBooks } from "react-icons/md";
 import TestVocacional from "./testvocacional";
 import MyButton from "./mybutton";
 
@@ -61,7 +62,7 @@ const Formulario = ({ setUserData, userData }) => {
     const newEdad = e.target.value;
     // Convertir el valor a número y comprobar si está en el rango
     const edadNum = Number(newEdad);
-    if (edadNum >= 1 && edadNum <= 100) {
+    if (edadNum >= 0 && edadNum <= 100) {
       setEdad(newEdad);
     }
   };
@@ -72,11 +73,12 @@ const Formulario = ({ setUserData, userData }) => {
 
   return (
     <>
-      <Card className=" max-w-[800px]  w-1/2 p-8 flex-col flex gap-5 ">
-        <CardHeader className="flex gap-3 font-sans">
+      <Card className="mx-auto p-4 w-full max-w-xl overflow-auto">
+        <CardHeader className="text-center text-2xl font-bold mb-4 gap-3">
+          <MdLibraryBooks size={30}/>
           <h1>Registrate Aqui!</h1>
         </CardHeader>
-        <div className="w-full flex flex-col gap-4 font-sans">
+        <div className="flex flex-col gap-5">
           <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
             <Input
               value={nombre}
@@ -118,7 +120,7 @@ const Formulario = ({ setUserData, userData }) => {
             }}
             label="Genero"
             placeholder="Ingrese genero"
-            className="w-full dark:p-20"
+            className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4"
             color={camposEnAdvertencia.genero ? "danger" : "default"}
             onBlur={() =>
               setCamposEnAdvertencia({
@@ -194,7 +196,7 @@ const Formulario = ({ setUserData, userData }) => {
             />
           </div>
         </div>
-        <CardFooter className="flex justify-end items-center p-8 font-sans">
+        <CardFooter className="flex justify-center items-center p-8 sm:justify-end">
           <MyButton onClick={handleIrAlTest}>Enviar</MyButton>
         </CardFooter>
       </Card>
