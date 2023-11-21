@@ -518,7 +518,7 @@ const TestVocacional = ({ setUserData, userData }) => {
         <FaBook size={30} />
         <p>Bienvenido {userData.nombre} al Test de Orientación Vocacional</p>
       </CardHeader>
-      <CardBody className="overflow-y-scroll">
+      <CardBody >
         <div className="flex flex-col gap-8 my-5">
           {preguntas.map((pregunta, index) => (
             <div key={index} className="mb-4 px-4 sm:px-6">

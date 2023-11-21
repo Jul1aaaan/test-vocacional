@@ -73,7 +73,7 @@ const Formulario = ({ setUserData, userData }) => {
 
   return (
     <>
-      <Card className="mx-auto p-4 w-full max-w-xl">
+      <Card className="mx-auto p-4 w-full sm:max-w-lg md:max-w-xl">
         <CardHeader className="text-center text-lg md:text-2xl font-bold mb-4">
           <MdLibraryBooks size="1.5em" className="inline-block md:mr-2"/>
           <h1>Registrate Aqui!</h1>
@@ -196,7 +196,7 @@ const Formulario = ({ setUserData, userData }) => {
             />
           </div>
         </CardBody>
-        <CardFooter className="flex justify-end items-center p-4">
+        <CardFooter className="flex justify-center items-center p-4 sm:justify-end">
           <MyButton onClick={handleIrAlTest}>Enviar</MyButton>
         </CardFooter>
       </Card>
