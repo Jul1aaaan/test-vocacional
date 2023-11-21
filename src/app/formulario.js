@@ -73,12 +73,12 @@ const Formulario = ({ setUserData, userData }) => {
 
   return (
     <>
-      <Card className="mx-auto p-4 w-full max-w-xl overflow-auto">
-        <CardHeader className="text-center text-2xl font-bold mb-4 gap-3">
-          <MdLibraryBooks size={30}/>
+      <Card className="mx-auto p-4 w-full max-w-xl">
+        <CardHeader className="text-center text-lg md:text-2xl font-bold mb-4">
+          <MdLibraryBooks size="1.5em" className="inline-block md:mr-2"/>
           <h1>Registrate Aqui!</h1>
         </CardHeader>
-        <div className="flex flex-col gap-5">
+        <CardBody className="flex flex-col gap-3">
           <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
             <Input
               value={nombre}
@@ -195,8 +195,8 @@ const Formulario = ({ setUserData, userData }) => {
               }
             />
           </div>
-        </div>
-        <CardFooter className="flex justify-center items-center p-8 sm:justify-end">
+        </CardBody>
+        <CardFooter className="flex justify-end items-center p-4">
           <MyButton onClick={handleIrAlTest}>Enviar</MyButton>
         </CardFooter>
       </Card>

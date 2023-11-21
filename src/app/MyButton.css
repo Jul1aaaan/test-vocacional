@@ -1,0 +1,50 @@
+.custom-button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    background: #fc4b08;
+    color: ghostwhite;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .custom-button.disabled {
+    cursor: not-allowed;
+  }
+  
+  .custom-button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+  }
+  
+  .custom-button.hovered span {
+    color: black;
+  }
+  
+  .custom-button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .custom-button.hovered::before {
+    transform: translate3d(100%, 0, 0);
+  }
+  
