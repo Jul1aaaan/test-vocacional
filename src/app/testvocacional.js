@@ -30,14 +30,14 @@ const TestVocacional = ({ setUserData, userData }) => {
     // console.log("respuestas:", respuestas);
   };
   const imagenesCarrera = {
-    Derecho: "/images/DALL-E-DERECHO.jpg",
-    Contabilidad: "/images/DALL-E-CONTABILIDAD.png",
+    "Derecho": "/images/DALL-E-DERECHO.jpg",
+    "Contabilidad": "/images/DALL-E-CONTABILIDAD.png",
     "Ingeniería Industrial": "/images/DALL-E-INDUSTRIAL.png",
     "Ingeniería en Energías Renovables": "/images/DALL-E-RENOVABLE.png",
     "Desarrollo de Software": "/images/DALL-E-SOFTWARE.png",
-    Criminología: "/images/DALL-E-CRIMINOLOGIA.png",
+    "Criminología": "/images/DALL-E-CRIMINOLOGIA.png",
     "Marketing Digital": "/images/DALL-E-MARKETING.png",
-    "Comercio Exterior": "/images/DALL-E-COMERCIO.png",
+    "Comercio Exterior": "/images/DALL-E-COMERCIO.jpg",
     // Añade más carreras e imágenes según sea necesario
   };
 
