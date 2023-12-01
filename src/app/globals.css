@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0; /* Texto oscuro para legibilidad */
+  --background-rgb: 235, 234, 232 /* Blanco con un tono muy sutilmente naranja */
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 0, 0, 0; /* Texto oscuro para legibilidad */
+    --background-rgb: 235, 234, 232; /* Blanco con un tono muy sutilmente naranja */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Color de fondo del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2); /* Color del thumb */
+  border-radius: 6px; /* Bordes redondeados del thumb */
+  border: 3px solid rgba(0, 0, 0, 0); /* Espacio transparente entre track y thumb */
+}
+
+
