@@ -78,5 +78,5 @@ const ResultadoTestVocacional = ({
     </Card>
   );
 };
-
+//Final
 export default ResultadoTestVocacional;
