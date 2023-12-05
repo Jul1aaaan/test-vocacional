@@ -38,9 +38,11 @@ const ResultadoTestVocacional = ({
   return (
     <Card className=" max-w-md text-center p-4 ">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-center">
-        <p className="text-tiny uppercase font-bold">Gracias por participar!</p>
-        <small className="text-default-500">{carreraDescripcion}</small>
-        <h4 className="font-bold text-large">{carreraResultado}</h4>
+        <p className="text-tiny text-2xl uppercase font-bold">
+          Gracias por participar!
+        </p>
+        <small className="text-default-500 text-base">Resultados test...</small>
+        <h4 className="font-bold text-2xl">{carreraResultado}</h4>
       </CardHeader>
       <CardBody className="overflow-visible py-2">
         <Image
@@ -52,18 +54,24 @@ const ResultadoTestVocacional = ({
         />
       </CardBody>
       <CardFooter className="flex justify-center items-center p-4  ">
-        <Button onPress={onOpen} style={{ backgroundColor: '#F7B750', color: '#000000' }}>Mas información</Button>
+        <Button
+          onPress={onOpen}
+          style={{ backgroundColor: "#F7B750", color: "#000000" }}
+        >
+          Mas información
+        </Button>
         <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
           <ModalContent>
             {(onClose) => (
               <>
-                <ModalHeader className="flex flex-col gap-1">
-                    Función
+                <ModalHeader className="flex flex-col gap-1 text-2xl">
+                  Descripción
                 </ModalHeader>
                 <ModalBody>
-                  <p>
-                    {dptCarrera}
-                  </p>
+                  <h1 className="text-lg">Personalidad</h1>
+                  <p>{carreraDescripcion}</p>
+                  <h1 className="text-lg">Tareas</h1>
+                  <p>{dptCarrera}</p>
                 </ModalBody>
                 <ModalFooter>
                   <Button color="danger" variant="light" onPress={onClose}>

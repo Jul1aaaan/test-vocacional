@@ -47,30 +47,41 @@ const TestVocacional = ({ setUserData, userData }) => {
   };
 
   const descripcionesCarrera = {
-    Derecho:
-      "Tu pasión por la justicia te orienta hacia Derecho, donde defenderás la equidad y la ley.",
-    Contabilidad:
-      "Con un ojo para el detalle y un amor por los números, la Contabilidad es tu camino hacia la precisión financiera.",
-    "Ingeniería Industrial":
-      "Tu meticulosidad y eficiencia te llevan a la Ingeniería Industrial, perfecta para optimizar sistemas y procesos.",
-    "Ingeniería en Energías Renovables":
-      "Tu visión sostenible y creativa te impulsa hacia la Ingeniería en Energías Renovables, para innovar en soluciones verdes.",
-    "Desarrollo de Software":
-      "Tu habilidad para resolver problemas complejos te hace ideal para el Desarrollo de Software, transformando el mundo digital.",
-    Criminología:
-      "Con un agudo sentido de justicia y análisis, la Criminología te espera para desentrañar misterios y promover la seguridad social.",
-    "Marketing Digital":
-      "Tu creatividad y perspicacia comercial brillan en Marketing Digital, donde conectarás marcas y consumidores en la era digital.",
-    "Comercio Exterior":
-      "Tu interés en las culturas y el comercio global te dirige hacia el Comercio Exterior, abriendo fronteras y mercados.",
-    "Administración de Empresas":
-      "Líder nato, la Administración de Empresas es tu escenario para dirigir y prosperar en el mundo corporativo.",
-    Diseño:
-      "Con un espíritu inventivo y un ojo estético, el Diseño te llama para crear y embellecer el entorno visual.",
-    "Trabajo Social":
-      "Empático y comprometido, el Trabajo Social es tu campo para marcar la diferencia en la vida de las personas.",
-    Educación:
-      "Tu pasión por compartir conocimiento y moldear mentes te convierte en un pilar dentro de la Educación.",
+    "Derecho":
+"Tu integridad y tu firme creencia en la justicia son el faro que guía tu camino hacia el Derecho. Como defensor innato de la equidad y la verdad, te sientes llamado a ser la voz de aquellos que buscan justicia. En ti se combinan la pasión por el bien común y la precisión en el manejo de la ley, lo que te convierte en un baluarte de la legalidad y un agente de cambio en la sociedad.",
+
+"Contabilidad":
+"Tu mundo es uno donde cada detalle cuenta y cada cifra tiene su lugar perfecto. En la Contabilidad, encuentras el equilibrio perfecto entre el orden y la claridad. Eres el artesano de los números, el estratega detrás de las finanzas, y tu habilidad para desentrañar los más complejos laberintos financieros es tan natural como tu respirar.",
+
+"Ingeniería Industrial":
+"Tu mente analítica y tu visión para la eficiencia te llevan naturalmente a la Ingeniería Industrial. Eres el maestro de la optimización, el arquitecto de sistemas fluidos y efectivos. Tu capacidad para ver más allá de los procesos, para rediseñar y mejorar, te convierte en un revolucionario de la industria moderna.",
+
+"Ingeniería en Energías Renovables":
+"Eres un visionario, alguien que mira al futuro y ve un mundo impulsado por energías limpias y sostenibles. La Ingeniería en Energías Renovables es tu campo de juego; en él, tu creatividad y compromiso con el medio ambiente te llevan a innovar y a buscar soluciones que respeten nuestro planeta y aseguren un mañana más verde.",
+
+"Desarrollo de Software":
+"En el vasto mundo digital, encuentras tu vocación en el Desarrollo de Software. Tienes la capacidad única de hablar el lenguaje de las máquinas y de transformar ideas abstractas en realidades concretas. Tu curiosidad por la tecnología y tu habilidad para resolver problemas complejos te convierten en un creador de mundos digitales sin par.",
+
+"Criminología":
+"Posees una mente inquisitiva que no descansa hasta encontrar la verdad. La Criminología te llama, ofreciéndote la oportunidad de explorar los misterios del comportamiento humano y de contribuir a un entorno más seguro. Eres un detective en el ámbito social, buscando siempre las claves para prevenir y entender el crimen.",
+
+"Marketing Digital":
+"Con un pulso firme en las tendencias actuales y un ojo crítico para las oportunidades, el Marketing Digital es tu escenario ideal. Eres un narrador de historias en la era digital, conectando marcas con corazones y mentes a través de la vasta red de la comunicación en línea.",
+
+"Comercio Exterior":
+"Tu curiosidad por las diferentes culturas y tu interés en la economía global te hacen sobresalir en el Comercio Exterior. Como puente entre naciones, facilitas el intercambio de bienes y servicios, y tu habilidad para negociar y comprender las complejidades del mercado internacional te destaca como un jugador clave en el tablero del comercio mundial.",
+
+"Administración de Empresas":
+"Líder nato, tu visión estratégica y tu capacidad para inspirar a otros hacen de la Administración de Empresas tu dominio natural. En ti, la toma de decisiones y la dirección de equipos fluyen con autoridad y sabiduría, y tu habilidad para convertir los retos en oportunidades es la fuerza motriz que impulsa al éxito empresarial.",
+
+"Diseño":
+"Tu mundo es uno donde la forma y la función bailan en armonía perfecta. Como diseñador, tienes el don de capturar la belleza y plasmarla en cada creación. Tu creatividad no conoce límites, y cada uno de tus proyectos es un testimonio de tu capacidad para ver el mundo no solo como es, sino como podría ser.",
+
+"Trabajo Social":
+"Con un corazón grande y una dedicación incansable, encuentras tu llamado en el Trabajo Social. Eres el defensor de los marginados, el soporte de los olvidados y el mentor de quienes buscan un futuro mejor. Tu labor es un reflejo de tu compromiso con la justicia y la igualdad, y cada día marcas la diferencia en la vida de las personas.",
+
+"Educación":
+"Tu amor por el conocimiento y tu deseo de compartirlo te definen como educador. Eres el guía que ilumina el camino del aprendizaje, el maestro que inspira a las mentes jóvenes a alcanzar su potencial. En cada lección impartida, en cada curiosidad despertada, resides en el corazón de la transformación educativa.",
   };
 
   const dptsCarrera = {
@@ -822,7 +833,7 @@ const TestVocacional = ({ setUserData, userData }) => {
       imagenesCarrera[carreraResultado] || "/images/default.png";
     const carreraDescripcion =
       descripcionesCarrera[carreraResultado] ||
-      "Una carrera llena de oportunidades y desafíos.";
+      "Te encuentras en la encrucijada de caminos, donde el potencial es vasto y las oportunidades son infinitas. Aún no se revela un sendero definido, pero tu versatilidad y tu disposición para explorar te capacitan para forjar tu propio destino. Abraza la incertid  umbre con curiosidad y coraje, pues en la búsqueda encontrarás tu verdadera pasión.";
     const dptCarrera = dptsCarrera[carreraResultado] || "No posees una funcion";
     console.log("Carrera descripcion" + carreraDescripcion);
     return (
@@ -838,54 +849,54 @@ const TestVocacional = ({ setUserData, userData }) => {
     );
   }
 
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <Card className="max-w-[800px] mx-auto my-8 max-h-[90vh] flex flex-col gap-5">
-        <CardHeader className="flex justify-start items-center gap-3 font-bold">
-          <FaBook size={30} />
-          <p>Bienvenido {userData.nombre} al Test de Orientación Vocacional</p>
-        </CardHeader>
-        <CardBody className="overflow-auto">
-          <div className="flex flex-col gap-8 my-5">
-            {preguntas.map((pregunta, index) => (
-              <div key={index} className="mb-4 px-4 sm:px-6">
-                <h3 className="text-lg sm:text-base md:text-lg font-semibold">
-                  {pregunta.texto}
-                </h3>
-                <RadioGroup
-                  value={respuestas[index]}
-                  onChange={(e) => handleRadioChange(index, e.target.value)}
-                  className="mt-2"
-                >
-                  {Object.keys(pregunta.opciones).map((opcion, idx) => (
-                    <div key={idx} className="flex items-center gap-2 mt-1">
-                      <Radio value={opcion} />
-                      <span className="text-sm sm:text-xs md:text-sm">
-                        {opcion}
-                      </span>
-                    </div>
-                  ))}
-                </RadioGroup>
+      return (
+        <div className="flex items-center justify-center min-h-screen">
+          <Card className="max-w-[600px] mx-auto my-8 max-h-[90vh] flex flex-col gap-5">
+            <CardHeader className="flex justify-start items-center gap-3 font-bold">
+              <FaBook size={30} />
+              <p>Bienvenido {userData.nombre} al Test de Orientación Vocacional</p>
+            </CardHeader>
+            <CardBody className="overflow-auto">
+              <div className="flex flex-col gap-8 my-5">
+                {preguntas.map((pregunta, index) => (
+                  <div key={index} className="mb-4 px-4 sm:px-6">
+                    <h3 className="text-lg sm:text-base md:text-lg font-semibold">
+                      {pregunta.texto}
+                    </h3>
+                    <RadioGroup
+                      value={respuestas[index]}
+                      onChange={(e) => handleRadioChange(index, e.target.value)}
+                      className="mt-2"
+                    >
+                      {Object.keys(pregunta.opciones).map((opcion, idx) => (
+                        <div key={idx} className="flex items-center gap-2 mt-1">
+                          <Radio value={opcion} />
+                          <span className="text-sm sm:text-xs md:text-sm">
+                            {opcion}
+                          </span>
+                        </div>
+                      ))}
+                    </RadioGroup>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </CardBody>
-        <CardFooter className="flex justify-center mb-4 md:justify-end items-center p-8 sm:p-7">
-          <MyButton
-            onClick={calcularResultados}
-            disabled={botonDeshabilitado}
-            title={
-              botonDeshabilitado
-                ? "Por favor, responde todas las preguntas antes de continuar."
-                : ""
-            }
-          >
-            Calcular Resultados
-          </MyButton>
-        </CardFooter>
-      </Card>
-    </div>
-  );
+            </CardBody>
+            <CardFooter className="flex justify-center mb-4 md:justify-end items-center p-8 sm:p-7">
+              <MyButton
+                onClick={calcularResultados}
+                disabled={botonDeshabilitado}
+                title={
+                  botonDeshabilitado
+                    ? "Por favor, responde todas las preguntas antes de continuar."
+                    : ""
+                }
+              >
+                Calcular Resultados
+              </MyButton>
+            </CardFooter>
+          </Card>
+        </div>
+      );
 };
 
 export default TestVocacional;
