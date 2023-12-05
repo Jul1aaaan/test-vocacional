@@ -168,7 +168,7 @@ const Formulario = ({ setUserData, userData }) => {
               size="md"
               type="email"
               label="Email"
-              placeholder="Enter your email"
+              placeholder="Ingrese su email"
               color={camposEnAdvertencia.email ? "danger" : "default"}
               onBlur={() =>
                 setCamposEnAdvertencia({
