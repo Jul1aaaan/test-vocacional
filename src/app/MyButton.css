@@ -12,7 +12,7 @@
     font-weight: 700;
     border-radius: 500px;
     overflow: hidden;
-    background: #fc4b08;
+    background: #ff6900;
     color: ghostwhite;
     transition: background-color 0.3s, color 0.3s;
   }
@@ -33,7 +33,7 @@
   
   .custom-button::before {
     content: "";
-    background: #000;
+    background: #ff6900;
     width: 120%;
     left: -10%;
     transform: skew(30deg);
@@ -44,6 +44,8 @@
     z-index: 0;
   }
   
+  
+
   .custom-button.hovered::before {
     transform: translate3d(100%, 0, 0);
   }

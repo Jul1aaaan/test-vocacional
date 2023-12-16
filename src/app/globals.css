@@ -2,23 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap");
+
 :root {
   --foreground-rgb: 0, 0, 0; /* Texto oscuro para legibilidad */
-  --background-rgb: 235, 234, 232 /* Blanco con un tono muy sutilmente naranja */
+  --background-rgb: 244, 247, 255; /* Azul claro sutil */
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 0, 0, 0; /* Texto oscuro para legibilidad */
-    --background-rgb: 235, 234, 232; /* Blanco con un tono muy sutilmente naranja */
+    --background-rgb: 244, 247, 255; /* Azul claro sutil */
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  background-color: rgb(var(--background-rgb));
 }
-
+/* En tu archivo CSS (p.ej., styles.css) */
+.background-image {
+  background-image: url('/fondo.png') ;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Establece la altura al 100% de la pantalla */
+}
 
 
 ::-webkit-scrollbar {
@@ -34,5 +42,3 @@ body {
   border-radius: 6px; /* Bordes redondeados del thumb */
   border: 3px solid rgba(0, 0, 0, 0); /* Espacio transparente entre track y thumb */
 }
-
-

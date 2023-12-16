@@ -47,41 +47,41 @@ const TestVocacional = ({ setUserData, userData }) => {
   };
 
   const descripcionesCarrera = {
-    "Derecho":
-"Tu integridad y tu firme creencia en la justicia son el faro que guía tu camino hacia el Derecho. Como defensor innato de la equidad y la verdad, te sientes llamado a ser la voz de aquellos que buscan justicia. En ti se combinan la pasión por el bien común y la precisión en el manejo de la ley, lo que te convierte en un baluarte de la legalidad y un agente de cambio en la sociedad.",
+    Derecho:
+      "Tu integridad y tu firme creencia en la justicia son el faro que guía tu camino hacia el Derecho. Como defensor innato de la equidad y la verdad, te sientes llamado a ser la voz de aquellos que buscan justicia. En ti se combinan la pasión por el bien común y la precisión en el manejo de la ley, lo que te convierte en un baluarte de la legalidad y un agente de cambio en la sociedad.",
 
-"Contabilidad":
-"Tu mundo es uno donde cada detalle cuenta y cada cifra tiene su lugar perfecto. En la Contabilidad, encuentras el equilibrio perfecto entre el orden y la claridad. Eres el artesano de los números, el estratega detrás de las finanzas, y tu habilidad para desentrañar los más complejos laberintos financieros es tan natural como tu respirar.",
+    Contabilidad:
+      "Tu mundo es uno donde cada detalle cuenta y cada cifra tiene su lugar perfecto. En la Contabilidad, encuentras el equilibrio perfecto entre el orden y la claridad. Eres el artesano de los números, el estratega detrás de las finanzas, y tu habilidad para desentrañar los más complejos laberintos financieros es tan natural como tu respirar.",
 
-"Ingeniería Industrial":
-"Tu mente analítica y tu visión para la eficiencia te llevan naturalmente a la Ingeniería Industrial. Eres el maestro de la optimización, el arquitecto de sistemas fluidos y efectivos. Tu capacidad para ver más allá de los procesos, para rediseñar y mejorar, te convierte en un revolucionario de la industria moderna.",
+    "Ingeniería Industrial":
+      "Tu mente analítica y tu visión para la eficiencia te llevan naturalmente a la Ingeniería Industrial. Eres el maestro de la optimización, el arquitecto de sistemas fluidos y efectivos. Tu capacidad para ver más allá de los procesos, para rediseñar y mejorar, te convierte en un revolucionario de la industria moderna.",
 
-"Ingeniería en Energías Renovables":
-"Eres un visionario, alguien que mira al futuro y ve un mundo impulsado por energías limpias y sostenibles. La Ingeniería en Energías Renovables es tu campo de juego; en él, tu creatividad y compromiso con el medio ambiente te llevan a innovar y a buscar soluciones que respeten nuestro planeta y aseguren un mañana más verde.",
+    "Ingeniería en Energías Renovables":
+      "Eres un visionario, alguien que mira al futuro y ve un mundo impulsado por energías limpias y sostenibles. La Ingeniería en Energías Renovables es tu campo de juego; en él, tu creatividad y compromiso con el medio ambiente te llevan a innovar y a buscar soluciones que respeten nuestro planeta y aseguren un mañana más verde.",
 
-"Desarrollo de Software":
-"En el vasto mundo digital, encuentras tu vocación en el Desarrollo de Software. Tienes la capacidad única de hablar el lenguaje de las máquinas y de transformar ideas abstractas en realidades concretas. Tu curiosidad por la tecnología y tu habilidad para resolver problemas complejos te convierten en un creador de mundos digitales sin par.",
+    "Desarrollo de Software":
+      "En el vasto mundo digital, encuentras tu vocación en el Desarrollo de Software. Tienes la capacidad única de hablar el lenguaje de las máquinas y de transformar ideas abstractas en realidades concretas. Tu curiosidad por la tecnología y tu habilidad para resolver problemas complejos te convierten en un creador de mundos digitales sin par.",
 
-"Criminología":
-"Posees una mente inquisitiva que no descansa hasta encontrar la verdad. La Criminología te llama, ofreciéndote la oportunidad de explorar los misterios del comportamiento humano y de contribuir a un entorno más seguro. Eres un detective en el ámbito social, buscando siempre las claves para prevenir y entender el crimen.",
+    Criminología:
+      "Posees una mente inquisitiva que no descansa hasta encontrar la verdad. La Criminología te llama, ofreciéndote la oportunidad de explorar los misterios del comportamiento humano y de contribuir a un entorno más seguro. Eres un detective en el ámbito social, buscando siempre las claves para prevenir y entender el crimen.",
 
-"Marketing Digital":
-"Con un pulso firme en las tendencias actuales y un ojo crítico para las oportunidades, el Marketing Digital es tu escenario ideal. Eres un narrador de historias en la era digital, conectando marcas con corazones y mentes a través de la vasta red de la comunicación en línea.",
+    "Marketing Digital":
+      "Con un pulso firme en las tendencias actuales y un ojo crítico para las oportunidades, el Marketing Digital es tu escenario ideal. Eres un narrador de historias en la era digital, conectando marcas con corazones y mentes a través de la vasta red de la comunicación en línea.",
 
-"Comercio Exterior":
-"Tu curiosidad por las diferentes culturas y tu interés en la economía global te hacen sobresalir en el Comercio Exterior. Como puente entre naciones, facilitas el intercambio de bienes y servicios, y tu habilidad para negociar y comprender las complejidades del mercado internacional te destaca como un jugador clave en el tablero del comercio mundial.",
+    "Comercio Exterior":
+      "Tu curiosidad por las diferentes culturas y tu interés en la economía global te hacen sobresalir en el Comercio Exterior. Como puente entre naciones, facilitas el intercambio de bienes y servicios, y tu habilidad para negociar y comprender las complejidades del mercado internacional te destaca como un jugador clave en el tablero del comercio mundial.",
 
-"Administración de Empresas":
-"Líder nato, tu visión estratégica y tu capacidad para inspirar a otros hacen de la Administración de Empresas tu dominio natural. En ti, la toma de decisiones y la dirección de equipos fluyen con autoridad y sabiduría, y tu habilidad para convertir los retos en oportunidades es la fuerza motriz que impulsa al éxito empresarial.",
+    "Administración de Empresas":
+      "Líder nato, tu visión estratégica y tu capacidad para inspirar a otros hacen de la Administración de Empresas tu dominio natural. En ti, la toma de decisiones y la dirección de equipos fluyen con autoridad y sabiduría, y tu habilidad para convertir los retos en oportunidades es la fuerza motriz que impulsa al éxito empresarial.",
 
-"Diseño":
-"Tu mundo es uno donde la forma y la función bailan en armonía perfecta. Como diseñador, tienes el don de capturar la belleza y plasmarla en cada creación. Tu creatividad no conoce límites, y cada uno de tus proyectos es un testimonio de tu capacidad para ver el mundo no solo como es, sino como podría ser.",
+    Diseño:
+      "Tu mundo es uno donde la forma y la función bailan en armonía perfecta. Como diseñador, tienes el don de capturar la belleza y plasmarla en cada creación. Tu creatividad no conoce límites, y cada uno de tus proyectos es un testimonio de tu capacidad para ver el mundo no solo como es, sino como podría ser.",
 
-"Trabajo Social":
-"Con un corazón grande y una dedicación incansable, encuentras tu llamado en el Trabajo Social. Eres el defensor de los marginados, el soporte de los olvidados y el mentor de quienes buscan un futuro mejor. Tu labor es un reflejo de tu compromiso con la justicia y la igualdad, y cada día marcas la diferencia en la vida de las personas.",
+    "Trabajo Social":
+      "Con un corazón grande y una dedicación incansable, encuentras tu llamado en el Trabajo Social. Eres el defensor de los marginados, el soporte de los olvidados y el mentor de quienes buscan un futuro mejor. Tu labor es un reflejo de tu compromiso con la justicia y la igualdad, y cada día marcas la diferencia en la vida de las personas.",
 
-"Educación":
-"Tu amor por el conocimiento y tu deseo de compartirlo te definen como educador. Eres el guía que ilumina el camino del aprendizaje, el maestro que inspira a las mentes jóvenes a alcanzar su potencial. En cada lección impartida, en cada curiosidad despertada, resides en el corazón de la transformación educativa.",
+    Educación:
+      "Tu amor por el conocimiento y tu deseo de compartirlo te definen como educador. Eres el guía que ilumina el camino del aprendizaje, el maestro que inspira a las mentes jóvenes a alcanzar su potencial. En cada lección impartida, en cada curiosidad despertada, resides en el corazón de la transformación educativa.",
   };
 
   const dptsCarrera = {
@@ -849,54 +849,78 @@ const TestVocacional = ({ setUserData, userData }) => {
     );
   }
 
-      return (
-        <div className="flex items-center justify-center min-h-screen">
-          <Card className="max-w-[600px] mx-auto my-8 max-h-[90vh] flex flex-col gap-5">
-            <CardHeader className="flex justify-start items-center gap-3 font-bold">
-              <FaBook size={30} />
-              <p>Bienvenido {userData.nombre} al Test de Orientación Vocacional</p>
-            </CardHeader>
-            <CardBody className="overflow-auto">
-              <div className="flex flex-col gap-8 my-5">
-                {preguntas.map((pregunta, index) => (
-                  <div key={index} className="mb-4 px-4 sm:px-6">
-                    <h3 className="text-lg sm:text-base md:text-lg font-semibold">
-                      {pregunta.texto}
-                    </h3>
-                    <RadioGroup
-                      value={respuestas[index]}
-                      onChange={(e) => handleRadioChange(index, e.target.value)}
-                      className="mt-2"
-                    >
-                      {Object.keys(pregunta.opciones).map((opcion, idx) => (
-                        <div key={idx} className="flex items-center gap-2 mt-1">
-                          <Radio value={opcion} />
-                          <span className="text-sm sm:text-xs md:text-sm">
-                            {opcion}
-                          </span>
-                        </div>
-                      ))}
-                    </RadioGroup>
-                  </div>
-                ))}
+  return (
+    <div className="flex items-center justify-center min-h-screen">
+      <Card className="max-w-[600px] mx-auto my-8 max-h-[90vh] flex flex-col gap-5">
+        <CardHeader className="flex justify-start items-center gap-3 font-bold">
+          <FaBook size={30} style={{ color: "#002E5D" }} />
+          <p style={{ color: "#002E5D" }}>
+            Bienvenido {userData.nombre} al Test de Orientación Vocacional
+          </p>
+        </CardHeader>
+        <CardBody className="overflow-auto">
+          <div className="flex flex-col gap-8 my-5">
+            {preguntas.map((pregunta, index) => (
+              <div key={index} className="mb-4 px-4 sm:px-6">
+                <h3
+                  className="text-lg sm:text-base md:text-lg font-semibold"
+                  style={{ color: "#002E5D" }}
+                >
+                  {pregunta.texto}
+                </h3>
+                <RadioGroup
+                  value={respuestas[index]}
+                  onChange={(e) => handleRadioChange(index, e.target.value)}
+                  className="mt-2"
+                >
+                  {Object.keys(pregunta.opciones).map((opcion, idx) => (
+                    <div key={idx} className="flex items-center gap-2 mt-1">
+                      <Radio value={opcion} />
+                      <span className="text-sm sm:text-xs md:text-sm">
+                        {opcion}
+                      </span>
+                    </div>
+                  ))}
+                </RadioGroup>
               </div>
-            </CardBody>
-            <CardFooter className="flex justify-center mb-4 md:justify-end items-center p-8 sm:p-7">
-              <MyButton
-                onClick={calcularResultados}
-                disabled={botonDeshabilitado}
-                title={
-                  botonDeshabilitado
-                    ? "Por favor, responde todas las preguntas antes de continuar."
-                    : ""
-                }
-              >
-                Calcular Resultados
-              </MyButton>
-            </CardFooter>
-          </Card>
-        </div>
-      );
+            ))}
+          </div>
+        </CardBody>
+        <CardFooter className="flex  justify-center sm:flex-row sm:justify-between items-center p-8 sm:p-7">
+          <Image
+            className="mb-3 hidden sm:mb-0 sm:block"
+            src="/logo.png"
+            alt="Logo de Isep"
+            height={120}
+            width={120}
+          />
+          <MyButton
+            onClick={calcularResultados}
+            disabled={botonDeshabilitado}
+            title={
+              botonDeshabilitado
+                ? "Por favor, responde todas las preguntas antes de continuar."
+                : ""
+            }
+          >
+            Calcular Resultados
+          </MyButton>
+        </CardFooter>
+      </Card>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "1rem",
+          right: "1rem",
+          fontSize: "0.8rem",
+          color:"#000",
+
+        }}
+      >
+        Creado por Fundación ISEP
+      </div>
+    </div>
+  );
 };
 
 export default TestVocacional;

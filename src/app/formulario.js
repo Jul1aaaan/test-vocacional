@@ -8,6 +8,7 @@ import {
   Button,
   CardFooter,
   CardBody,
+  Image,
 } from "@nextui-org/react";
 import { MdLibraryBooks } from "react-icons/md";
 import TestVocacional from "./testvocacional";
@@ -75,8 +76,12 @@ const Formulario = ({ setUserData, userData }) => {
     <>
       <Card className="mx-auto my-auto p-4 w-full sm:max-w-lg md:max-w-xl">
         <CardHeader className="text-center text-lg md:text-2xl font-bold mb-4">
-          <MdLibraryBooks size="1.5em" className="inline-block md:mr-2"/>
-          <h1>Registrate Aqui!</h1>
+          <MdLibraryBooks
+            size="1.5em"
+            className="inline-block md:mr-2"
+            style={{ color: "#002E5D" }}
+          />
+          <h1 style={{ color: "#002E5D" }} >Registrate Aqui!</h1>
         </CardHeader>
         <CardBody className="flex flex-col gap-3">
           <div className="flex w-full flex-wrap md:flex-nowrap mb-6 md:mb-0 gap-4">
@@ -196,11 +201,32 @@ const Formulario = ({ setUserData, userData }) => {
             />
           </div>
         </CardBody>
-        <CardFooter className="flex justify-center items-center p-4 sm:justify-end">
-          <MyButton onClick={handleIrAlTest}>Enviar</MyButton>
+        <CardFooter className="flex flex-col justify-center items-center p-6 mb-2 sm:justify-between sm:flex-row">
+            <Image
+              className="mb-4 hidden sm:mb-0 sm:block"
+              src="/logo.png"
+              alt="Logo de Isep"
+              height={100}
+              width={100}
+
+            />
+          <MyButton onClick={handleIrAlTest} >Enviar</MyButton>
         </CardFooter>
       </Card>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "1rem",
+          right: "1rem",
+          fontSize: "0.8rem",
+          color:"#000",
+          
+        }}
+      >
+        Creado por Fundación ISEP
+      </div>
     </>
+
   );
 };
 
